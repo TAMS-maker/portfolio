@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="/css/index.css">
+   
+   
+  
+  </head>
+  <body>
+
+<div class="container-fluid" id="main">
+  
+           
+            <div class="navbar navbar-expand-lg">
+              <div class="navbar-brand" id="head">
+                <h1>ÆIO</h1>
+              </div>
+              <button
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#myNavbarMenu"
+              >
+                <i class="custom-toggler-icon">
+                  <span></span>
+                </i>
+              </button>
+              <div class="navbar-collapse collapse" id="myNavbarMenu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">RECENT WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <li>
+                  <img src="/bg/moon.png" alt="icon" id="icon">
+                </li>
+                </ul>
+              </div>
+            </div>
+
+  <div class="row">
+ 
+            <div class="col-xl-8" id="pt"><img src="bg/awit.jpg" alt="awit" id="pic" class="center img-fluid">
+                        <h3 class="text-center " id="name"><br>Hello, I'm Melvin.<p>I'm available for freelance work and projects.</p><p>Let's Work Togther</p></h3>
+            </div>
+      <div class="col-xl-4">
+
+              <div class="container1">
+                               <p class="">Et ligula ullamcorper malesuada proin libero nunc. Placerat in egestas erat imperdiet sed euismod nisi porta. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Sapien faucibus et molestie ac feugiat sed lectus. Velit laoreet id donec ultrices tincidunt arcu. Risus nullam eget felis eget nunc. </p>
+    
+     
+                 </div>
+    
+    
+    
+    
+    
+    
+          <div class="container2">
+    
+    
+              <div class="container">
+                     <div class="row" id ="prognum">
+
+                         <div class="col-md-10">
+
+                                    <h3 class="progress-title ">PHP</h3>
+                               <div class="progress">
+                                     <div class="progress-value">65%</div>
+                                     <div class="progress-bar" style="width:65%;"> </div>
+                                
+                                </div>
+     
+                                      <h3 class="progress-title ">CSS3</h3>
+               
+                                <div class="progress yellow">
+                                      <div class="progress-value">87%</div>
+                                      <div class="progress-bar" style="width:87%;"></div>
+                                    
+                                </div>
+
+                                      <h3 class="progress-title ">BOOTSTRAP</h3>
+                                <div class="progress green">
+                                      <div class="progress-value">55%</div>
+                                      <div class="progress-bar" style="width:87%;"></div>
+                                
+                                </div>
+
+                                      <h3 class="progress-title ">HTML</h3>
+                                 <div class="progress blue">
+                                 <div class="progress-value">95%</div>
+                                 <div class="progress-bar" style="width:87%;"></div>
+                                
+                                </div>
+
+                           </div>
+                        </div>
+               </div>
+           </div>
+
+
+      </div>
+
+
+  </div>
+
+      
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+var icon = document.getElementById("icon");
+
+if
+  (localStorage.getItem("theme") == null)
+  {
+    localStorage.setItem("theme", "light");
+}
+
+
+
+
+let localData = localStorage.getItem("theme");
+
+if(localData == "light") {
+  icon.src = "/bg/moon.png";
+  document.body.classList.remove("dark-theme");
+}else if(localData == "dark"){
+  icon.src = "/bg/sun.png";
+  document.body.classList.add("dark-theme");
+
+}
+
+icon.onclick =function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src = "/bg/sun.png";
+    localStorage.setItem("theme", "dark");
+  }else{
+    icon.src = "/bg/moon.png";
+    localStorage.setItem("theme", "light");
+  }
+}
+
+
+
+
+</script>
+
+  </body>
+
+ 
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+ 
+   
+</html>
