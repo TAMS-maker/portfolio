@@ -17,7 +17,30 @@ html, body{
     --primary-color:#000106;
     --secondary-color:#fff;
 
+
 }
+
+.custom-toggler-icon span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--secondary-color);
+    margin: 8px 0;
+  }
+  .custom-toggler-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+   background: var(--secondary-color);
+  }
+  .custom-toggler-icon::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--secondarry-color);
+  }
 
 
 
