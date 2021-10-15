@@ -43,17 +43,18 @@ html, body{
     padding: 5px;
 }
 
-a{
-    color: black;
+li a{
+    color: var(--secondary-color);
 }
 
-p{
-    color: var(--secondarry-color);}
-
-.progress-title{
-    color: var(--primary-color);
- 
+h3{
+    color: var(--secondary-color);
 }
+
+.lorem{
+    color: var(--secondary-color);
+}
+
 
 
 #pic{
@@ -80,7 +81,7 @@ p{
   .progress-title{
     font-size: 18px;
     font-weight: 700;
-    color: #000;
+    color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0 0 30px;
@@ -113,7 +114,7 @@ p{
 .progress .progress-value{
     font-size: 18px;
     font-weight: 700;
-    color: #000;
+    color:var(--secondary-color);
     position: absolute;
     top: -32px;
     right: -5px;
